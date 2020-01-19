@@ -1,0 +1,6 @@
+FROM python:3.7
+ENV PYTHONPATH=/
+RUN pip3 install ray
+
+COPY ./src /src
+RUN python3 /src/__init__.py
